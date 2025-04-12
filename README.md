@@ -10,11 +10,11 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: #B22222; /* Firebrick red background */
+            background-color: #000; /* Black background */
             padding: 1rem;
         }
         nav a {
-            color: #FFF5EE; /* Seashell text */
+            color: #FFF; /* White text */
             text-decoration: none;
             margin: 0 1rem;
             font-weight: bold;
@@ -38,15 +38,15 @@
             max-width: 500px;
             margin: 2rem auto;
             padding: 1.5rem;
-            border: 2px solid #B22222; /* Firebrick red border */
+            border: 2px solid #000; /* Black border */
             border-radius: 10px;
-            background-color: #FFE4E1; /* Misty rose background */
+            background-color: #F5F5F5; /* Light gray background */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
         }
         form label {
             display: block;
             margin-bottom: 0.5rem;
-            color: #B22222; /* Firebrick red text */
+            color: #000; /* Black text */
             font-weight: bold;
         }
         form input, form textarea, form select {
@@ -55,15 +55,15 @@
             margin-bottom: 1rem;
             border: 1px solid #ccc;
             border-radius: 5px;
-            background-color: #FFF8DC; /* Cornsilk background */
+            background-color: #FFF; /* White background */
         }
         form input:focus, form textarea:focus, form select:focus {
-            border-color: #B22222; /* Firebrick red border on focus */
+            border-color: #000; /* Black border on focus */
             outline: none;
         }
         form button {
             padding: 0.7rem 1.5rem;
-            background-color: #B22222; /* Firebrick red button */
+            background-color: #000; /* Black button */
             color: white;
             border: none;
             border-radius: 5px;
@@ -71,17 +71,24 @@
             font-weight: bold;
         }
         form button:hover {
-            background-color: #8B0000; /* Dark red on hover */
+            background-color: #333; /* Dark gray on hover */
         }
         /* Footer styling */
         footer {
             text-align: center;
             padding: 1rem;
-            background-color: #333;
+            background-color: #000; /* Black background */
             color: white;
         }
         footer p {
             margin: 0;
+        }
+        /* Panda image styling */
+        .panda-image {
+            display: block;
+            margin: 2rem auto;
+            max-width: 200px;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -97,9 +104,10 @@
         </nav>
     </header>
     <main>
-        <p style="text-align: center; color: #B22222; font-size: 1.2rem;">We'd love to hear from you. Please fill out the form below.</p>
+        
+        <p style="text-align: center; color: #000; font-size: 1.2rem;">We'd love to hear from you. Please fill out the form below.</p>
         <section id="contact">
-            <h2 style="text-align: center; color: #B22222;">Contact Us</h2>
+            <h2 style="text-align: center; color: #000;">Contact Us</h2>
             <form action="#" method="post">
                 <label for="name">Full Name:</label>
                 <input type="text" id="name" name="name" placeholder="Enter your full name" required>
