@@ -3,163 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <style>
-        /* Styling for the navbar */
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #4CAF50; /* Green background */
-            padding: 1rem;
-        }
-        nav a {
-            color: #FFF; /* White text */
-            text-decoration: none;
-            margin: 0 1rem;
-            font-weight: bold;
-        }
-        nav a:hover {
-            color: #FF5722; /* Orange on hover */
-            text-decoration: underline;
-        }
-        .navbar-links {
-            display: flex;
-        }
-        /* Responsive design for smaller screens */
-        @media (max-width: 600px) {
-            .navbar-links {
-                flex-direction: column;
-                align-items: center;
-            }
-        }
-        /* Styling for the contact form */
-        form {
-            max-width: 500px;
-            margin: 2rem auto;
-            padding: 1.5rem;
-            border: 2px solid #4CAF50; /* Green border */
-            border-radius: 10px;
-            background-color: #FFF3E0; /* Light orange background */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-        }
-        form label {
-            display: block;
-            margin-bottom: 0.5rem;
-            color: #4CAF50; /* Green text */
-            font-weight: bold;
-        }
-        form input, form textarea, form select {
-            width: 100%;
-            padding: 0.5rem;
-            margin-bottom: 1rem;
-            border: 1px solid #FF9800; /* Orange border */
-            border-radius: 5px;
-            background-color: #FFF; /* White background */
-        }
-        form input:focus, form textarea:focus, form select:focus {
-            border-color: #4CAF50; /* Green border on focus */
-            outline: none;
-        }
-        form button {
-            padding: 0.7rem 1.5rem;
-            background-color: #FF5722; /* Orange button */
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: bold;
-        }
-        form button:hover {
-            background-color: #E64A19; /* Darker orange on hover */
-        }
-        /* Footer styling */
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background-color: #4CAF50; /* Green background */
-            color: white;
-        }
-        footer p {
-            margin: 0;
-        }
-        /* Panda image styling */
-        .panda-image {
-            display: block;
-            margin: 2rem auto;
-            max-width: 200px;
-            border-radius: 10px;
-            border: 3px solid #FF5722; /* Orange border */
-        }
-        /* Main text styling */
-        p {
-            text-align: center;
-            color: #FF5722; /* Orange text */
-            font-size: 1.2rem;
-        }
-        h1, h2 {
-            text-align: center;
-            color: #4CAF50; /* Green text */
-        }
-    </style>
+    <title>Chenar's Web</title>
 </head>
-<body>
+<body style="background-color: #f9f9f9; color: #333; font-family: 'Helvetica Neue', Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6;">
     <header>
-        <nav>
-            <h1 style="color: white;">Professional Contact</h1>
-            <div class="navbar-links">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
+        <nav style="display: flex; justify-content: space-between; align-items: center; background-color: #fff; padding: 1rem 2rem; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+            <h1 style="font-size: 1.5rem; margin: 0;">Chenar's Web</h1>
+            <div style="display: flex;">
+                <a href="#home" style="color: #007BFF; text-decoration: none; margin: 0 1rem; font-weight: 500;">Home</a>
+                <a href="#about" style="color: #007BFF; text-decoration: none; margin: 0 1rem; font-weight: 500;">About</a>
+                <a href="#contact" style="color: #007BFF; text-decoration: none; margin: 0 1rem; font-weight: 500;">Contact</a>
             </div>
         </nav>
     </header>
-    <main>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Giant_Panda_in_Beijing_Zoo_1.JPG" alt="Panda" class="panda-image">
-        <p style="text-align: center; color: #000; font-size: 1.2rem;">We'd love to hear from you. Please fill out the form below.</p>
+    <main style="padding: 2rem; text-align: center;">
+        <p>Welcome to my personal webpage. Please fill out the form below to get in touch.</p>
         <section id="contact">
-            <h2 style="text-align: center; color: #000;">Contact Us</h2>
-            <form action="#" method="post" enctype="multipart/form-data">
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-                
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-                
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
-                
-                <label for="address">Address:</label>
-                <input type="text" id="address" name="address" placeholder="Enter your address" required>
-                
-                <label for="contact-method">Preferred Contact Method:</label>
-                <select id="contact-method" name="contact-method" required>
-                    <option value="" disabled selected>Select a contact method</option>
-                    <option value="email">Email</option>
-                    <option value="phone">Phone</option>
-                    <option value="text">Text Message</option>
+            <form action="#" method="post" enctype="multipart/form-data" style="max-width: 400px; margin: 2rem auto; padding: 1.5rem; border: 1px solid #ddd; border-radius: 8px; background-color: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                <label for="name" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px; background-color: #f9f9f9;">
+
+                <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px; background-color: #f9f9f9;">
+
+                <label for="phone" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px; background-color: #f9f9f9;">
+
+                <label for="dob" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px; background-color: #f9f9f9;">
+
+                <label for="gender" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Gender:</label>
+                <select id="gender" name="gender" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px; background-color: #f9f9f9;">
+                    <option value="">Select your gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
                 </select>
-                
-                <label for="subject">Subject:</label>
-                <select id="subject" name="subject" required>
-                    <option value="" disabled selected>Select a subject</option>
-                    <option value="general">General Inquiry</option>
-                    <option value="support">Support</option>
-                    <option value="feedback">Feedback</option>
+
+                <label for="address" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Address:</label>
+                <textarea id="address" name="address" rows="2" placeholder="Enter your address" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px; background-color: #f9f9f9;"></textarea>
+
+                <label for="city" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">City:</label>
+                <input type="text" id="city" name="city" placeholder="Enter your city" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px; background-color: #f9f9f9;">
+
+                <label for="state" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">State/Province:</label>
+                <input type="text" id="state" name="state" placeholder="Enter your state/province" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px; background-color: #f9f9f9;">
+
+                <label for="zip" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">ZIP/Postal Code:</label>
+                <input type="text" id="zip" name="zip" placeholder="Enter your ZIP/postal code" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px; background-color: #f9f9f9;">
+
+                <label for="country" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Country:</label>
+                <select id="country" name="country" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px; background-color: #f9f9f9;">
+                    <option value="">Select your country</option>
+                    <option value="us">United States</option>
+                    <option value="ca">Canada</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="other">Other</option>
                 </select>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" placeholder="Write your message here" required></textarea>
-                
-                <label for="file">Upload a File (optional):</label>
-                <input type="file" id="file" name="file">
-                
-                <button type="submit">Submit</button>
+
+                <label for="occupation" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Occupation:</label>
+                <input type="text" id="occupation" name="occupation" placeholder="Enter your occupation" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px; background-color: #f9f9f9;">
+
+                <label for="company" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Company/Organization:</label>
+                <input type="text" id="company" name="company" placeholder="Enter your company/organization" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px; background-color: #f9f9f9;">
+
+                <label for="website" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Website (if any):</label>
+                <input type="url" id="website" name="website" placeholder="Enter your website URL" style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px; background-color: #f9f9f9;">
+
+                <label for="interests" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Interests:</label>
+                <textarea id="interests" name="interests" rows="2" placeholder="Enter your interests" style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px; background-color: #f9f9f9;"></textarea>
+
+                <label for="message" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Write your message here" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px; background-color: #f9f9f9;"></textarea>
+
+                <button type="submit" style="padding: 0.7rem 1.5rem; background-color: #007BFF; color: #fff; border: none; border-radius: 4px; cursor: pointer; font-weight: 500;">Submit</button>
             </form>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2025 Your Company Name. All rights reserved.</p>
+    <footer style="text-align: center; padding: 1rem; background-color: #f9f9f9; color: #666; font-size: 0.9rem;">
+        <p>&copy; 2025 Chenar. All rights reserved.</p>
     </footer>
 </body>
 </html>
