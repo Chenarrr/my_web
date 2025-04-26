@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chenar's Personal Web</title>
+    <title>Chenar's Professional Contact</title>
     <style>
-        /* General dark theme styling */
+        /* Black-and-white theme styling */
         body {
-            background-color: #121212; /* Dark background */
-            color: #E0E0E0; /* Light text */
+            background-color: #ffffff; /* White background */
+            color: #000000; /* Black text */
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -17,17 +17,17 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: #1F1F1F; /* Darker navbar background */
+            background-color: #f0f0f0; /* Light gray navbar background */
             padding: 1rem;
         }
         nav a {
-            color: #BB86FC; /* Purple text */
+            color: #000000; /* Black text */
             text-decoration: none;
             margin: 0 1rem;
             font-weight: bold;
         }
         nav a:hover {
-            color: #03DAC6; /* Teal on hover */
+            color: #555555; /* Dark gray on hover */
             text-decoration: underline;
         }
         .navbar-links {
@@ -43,66 +43,66 @@
             max-width: 500px;
             margin: 2rem auto;
             padding: 1.5rem;
-            border: 2px solid #BB86FC; /* Purple border */
+            border: 2px solid #000000; /* Black border */
             border-radius: 10px;
-            background-color: #1E1E1E; /* Dark form background */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+            background-color: #f9f9f9; /* Light gray form background */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
         }
         form label {
             display: block;
             margin-bottom: 0.5rem;
-            color: #BB86FC; /* Purple text */
+            color: #000000; /* Black text */
             font-weight: bold;
         }
         form input, form textarea, form select {
             width: 100%;
             padding: 0.5rem;
             margin-bottom: 1rem;
-            border: 1px solid #03DAC6; /* Teal border */
+            border: 1px solid #000000; /* Black border */
             border-radius: 5px;
-            background-color: #2C2C2C; /* Dark input background */
-            color: #E0E0E0; /* Light text */
+            background-color: #ffffff; /* White input background */
+            color: #000000; /* Black text */
         }
         form input:focus, form textarea:focus, form select:focus {
-            border-color: #BB86FC; /* Purple border on focus */
+            border-color: #555555; /* Dark gray border on focus */
             outline: none;
         }
         form button {
             padding: 0.7rem 1.5rem;
-            background-color: #BB86FC; /* Purple button */
-            color: #121212; /* Dark text */
+            background-color: #000000; /* Black button */
+            color: #ffffff; /* White text */
             border: none;
             border-radius: 5px;
             cursor: pointer;
             font-weight: bold;
         }
         form button:hover {
-            background-color: #3700B3; /* Darker purple on hover */
+            background-color: #555555; /* Dark gray on hover */
         }
         footer {
             text-align: center;
             padding: 1rem;
-            background-color: #1F1F1F; /* Darker footer background */
-            color: #E0E0E0; /* Light text */
+            background-color: #f0f0f0; /* Light gray footer background */
+            color: #000000; /* Black text */
         }
         footer p {
             margin: 0;
         }
         p {
             text-align: center;
-            color: #E0E0E0; /* Light text */
+            color: #000000; /* Black text */
             font-size: 1.2rem;
         }
         h1, h2 {
             text-align: center;
-            color: #BB86FC; /* Purple text */
+            color: #000000; /* Black text */
         }
     </style>
 </head>
-<body style="background-color: #f9f9f9; color: #333; font-family: 'Helvetica Neue', Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6;">
+<body>
     <header>
         <nav>
-            <h1>Chenar's Personal Web</h1>
+            <h1>Chenar's Professional Contact</h1>
             <div class="navbar-links">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
@@ -111,10 +111,11 @@
         </nav>
     </header>
     <main>
-        <p>Welcome to Chenar's personal webpage. Please fill out the form below to share your information with me.</p>
+        <p>Welcome to Chenar's professional contact page. Please fill out the form below to get in touch.</p>
         <section id="contact">
             <h2>Contact Me</h2>
             <form action="#" method="post" enctype="multipart/form-data">
+                <!-- Form content remains unchanged -->
                 <label for="name">Full Name:</label>
                 <input type="text" id="name" name="name" placeholder="Enter your full name" required>
                 
@@ -135,43 +136,10 @@
                     <option value="text">Text Message</option>
                 </select>
 
-                <label for="address" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Address:</label>
-                <textarea id="address" name="address" rows="2" placeholder="Enter your address" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px; background-color: #f9f9f9;"></textarea>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Write your message here" required></textarea>
 
-                <label for="city" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">City:</label>
-                <input type="text" id="city" name="city" placeholder="Enter your city" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px; background-color: #f9f9f9;">
-
-                <label for="state" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">State/Province:</label>
-                <input type="text" id="state" name="state" placeholder="Enter your state/province" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px; background-color: #f9f9f9;">
-
-                <label for="zip" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">ZIP/Postal Code:</label>
-                <input type="text" id="zip" name="zip" placeholder="Enter your ZIP/postal code" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px; background-color: #f9f9f9;">
-
-                <label for="country" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Country:</label>
-                <select id="country" name="country" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px; background-color: #f9f9f9;">
-                    <option value="">Select your country</option>
-                    <option value="us">United States</option>
-                    <option value="ca">Canada</option>
-                    <option value="uk">United Kingdom</option>
-                    <option value="other">Other</option>
-                </select>
-
-                <label for="occupation" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Occupation:</label>
-                <input type="text" id="occupation" name="occupation" placeholder="Enter your occupation" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px; background-color: #f9f9f9;">
-
-                <label for="company" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Company/Organization:</label>
-                <input type="text" id="company" name="company" placeholder="Enter your company/organization" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px; background-color: #f9f9f9;">
-
-                <label for="website" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Website (if any):</label>
-                <input type="url" id="website" name="website" placeholder="Enter your website URL" style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px; background-color: #f9f9f9;">
-
-                <label for="interests" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Interests:</label>
-                <textarea id="interests" name="interests" rows="2" placeholder="Enter your interests" style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px; background-color: #f9f9f9;"></textarea>
-
-                <label for="message" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Message:</label>
-                <textarea id="message" name="message" rows="4" placeholder="Write your message here" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px; background-color: #f9f9f9;"></textarea>
-
-                <button type="submit" style="padding: 0.7rem 1.5rem; background-color: #007BFF; color: #fff; border: none; border-radius: 4px; cursor: pointer; font-weight: 500;">Submit</button>
+                <button type="submit">Submit</button>
             </form>
         </section>
     </main>
