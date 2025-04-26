@@ -99,7 +99,7 @@
         }
     </style>
 </head>
-<body>
+<body style="background-color: #f9f9f9; color: #333; font-family: 'Helvetica Neue', Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6;">
     <header>
         <nav>
             <h1>Chenar's Personal Web</h1>
@@ -134,22 +134,44 @@
                     <option value="phone">Phone</option>
                     <option value="text">Text Message</option>
                 </select>
-                
-                <label for="subject">Subject:</label>
-                <select id="subject" name="subject" required>
-                    <option value="" disabled selected>Select a subject</option>
-                    <option value="general">General Inquiry</option>
-                    <option value="support">Support</option>
-                    <option value="feedback">Feedback</option>
+
+                <label for="address" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Address:</label>
+                <textarea id="address" name="address" rows="2" placeholder="Enter your address" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px; background-color: #f9f9f9;"></textarea>
+
+                <label for="city" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">City:</label>
+                <input type="text" id="city" name="city" placeholder="Enter your city" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px; background-color: #f9f9f9;">
+
+                <label for="state" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">State/Province:</label>
+                <input type="text" id="state" name="state" placeholder="Enter your state/province" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px; background-color: #f9f9f9;">
+
+                <label for="zip" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">ZIP/Postal Code:</label>
+                <input type="text" id="zip" name="zip" placeholder="Enter your ZIP/postal code" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px; background-color: #f9f9f9;">
+
+                <label for="country" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Country:</label>
+                <select id="country" name="country" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px; background-color: #f9f9f9;">
+                    <option value="">Select your country</option>
+                    <option value="us">United States</option>
+                    <option value="ca">Canada</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="other">Other</option>
                 </select>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" placeholder="Write your message here" required></textarea>
-                
-                <label for="file">Upload a File (optional):</label>
-                <input type="file" id="file" name="file">
-                
-                <button type="submit">Submit</button>
+
+                <label for="occupation" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Occupation:</label>
+                <input type="text" id="occupation" name="occupation" placeholder="Enter your occupation" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px; background-color: #f9f9f9;">
+
+                <label for="company" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Company/Organization:</label>
+                <input type="text" id="company" name="company" placeholder="Enter your company/organization" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px; background-color: #f9f9f9;">
+
+                <label for="website" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Website (if any):</label>
+                <input type="url" id="website" name="website" placeholder="Enter your website URL" style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px; background-color: #f9f9f9;">
+
+                <label for="interests" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Interests:</label>
+                <textarea id="interests" name="interests" rows="2" placeholder="Enter your interests" style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px; background-color: #f9f9f9;"></textarea>
+
+                <label for="message" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Write your message here" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px; background-color: #f9f9f9;"></textarea>
+
+                <button type="submit" style="padding: 0.7rem 1.5rem; background-color: #007BFF; color: #fff; border: none; border-radius: 4px; cursor: pointer; font-weight: 500;">Submit</button>
             </form>
         </section>
     </main>
